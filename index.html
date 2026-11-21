@@ -3,222 +3,710 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مصنع الفرسان للخرز — عائلة أبو يونس | دقة، فخامة، وأعلى جودة خامات</title>
+  <meta name="description" content="مصنع الفرسان للخرز - عائلة أبو يونس بالسنبلاوين. إنتاج وتصنيع أجود أنواع الخرز البلاستيكي والملون والكريستالي بأحدث التقنيات وأفضل أسعار الجملة.">
+  
+  <!-- Google Fonts & Font Awesome -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="fo.css">
-
-  <title>مصنع الفرسان للخرز — عائلة أبو يونس</title>
 </head>
 <body>
 
   <!-- TOP BAR -->
-  <div class="topbar">
-    <span>📍 المنطقة الصناعية · قرية ديو الوسطى · بالسنبلاوين</span>
-    <span>📞 01013983160 — 0123456789</span>
-  </div>
-
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="brand">
-      <div class="brand-icon">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="12" cy="8" rx="4" ry="5"/>
-          <ellipse cx="5" cy="18" rx="3" ry="4"/>
-          <ellipse cx="19" cy="18" rx="3" ry="4"/>
-          <ellipse cx="12" cy="20" rx="3" ry="3"/>
-        </svg>
+  <header class="topbar">
+    <div class="container">
+      <div class="topbar-info">
+        <span class="topbar-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>المنطقة الصناعية · قرية ديو الوسطى · بالسنبلاوين</span>
+        </span>
+        <span class="topbar-item">
+          <i class="fa-solid fa-clock"></i>
+          <span>العمل: يومياً 8:00 ص — 8:00 م</span>
+        </span>
       </div>
-      <div class="brand-text">
-        <h2>مصنع الفرسان للخرز</h2>
-        <p>جودة عالية الدقة</p>
+      <div class="topbar-actions">
+        <a href="tel:01013983160" class="topbar-item topbar-link">
+          <i class="fa-solid fa-phone"></i>
+          <span dir="ltr">01013983160</span>
+        </a>
+        <span style="color: rgba(255,255,255,0.2);">|</span>
+        <a href="tel:0123456789" class="topbar-item topbar-link">
+          <i class="fa-solid fa-phone-volume"></i>
+          <span dir="ltr">0123456789</span>
+        </a>
+        <span class="topbar-badge">توريد جملة ومفرق</span>
       </div>
     </div>
+  </header>
 
-    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  <!-- NAVBAR -->
+  <nav class="navbar-wrapper">
+    <div class="container">
+      <div class="navbar">
+        <a href="#hero" class="brand">
+          <div class="brand-icon-wrapper">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="12" cy="8" rx="4" ry="5"/>
+              <ellipse cx="5" cy="18" rx="3" ry="4"/>
+              <ellipse cx="19" cy="18" rx="3" ry="4"/>
+              <ellipse cx="12" cy="20" rx="3" ry="3"/>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <h2>مصنع <span>الفرسان</span> للخرز</h2>
+            <p>عائلة أبو يونس · جودة عالية الدقة</p>
+          </div>
+        </a>
 
-    <ul class="nav-links" id="nav">
-      <li>الرئيسية</li>
-      <li>من نحن</li>
-      <li>المنتجات</li>
-      <li>معرض الصور</li>
-      <li>تواصل معنا</li>
-    </ul>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="active">الرئيسية</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#features">مميزاتنا</a></li>
+          <li><a href="#products">المنتجات</a></li>
+          <li><a href="#gallery">معرض الصور</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
 
-    <button class="nav-cta">اطلب الآن</button>
+        <div class="nav-cta-group">
+          <a href="#contact" class="btn-nav-order">
+            <i class="fa-solid fa-bolt"></i>
+            <span>اطلب الآن</span>
+          </a>
+          <button class="menu-btn" id="menuToggle" aria-label="فتح القائمة">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-badge">( مصنع عائلة أبو يونس )</div>
-    <h1>جودة <span>الخرز</span></h1>
-    <h2>تصنع الفرق</h2>
-    <p>نحن في مصنع الفرسان نلتزم بتقديم أعلى جودة من الخامة باستخدام أحدث التقنيات وأفضل المواد الخام.</p>
-    <div class="hero-buttons">
-      <button class="btn-primary">استكشف منتجاتنا</button>
-      <button class="btn-secondary">تواصل معنا</button>
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <i class="fa-solid fa-award"></i>
+            <span>صرح عائلة أبو يونس الصناعي</span>
+          </div>
+          <h1>
+            جودة <span class="gold-text">الخرز الفاخر</span><br>
+            تصنع الفرق الحقيقي
+          </h1>
+          <div class="hero-subtitle">
+            ريادة في تصنيع وتوريد الخرز لكافة الاستخدامات
+          </div>
+          <p class="hero-desc">
+            نحن في مصنع الفرسان نلتزم بتقديم أعلى مواصفات خامة الخرز باستخدام أحدث خطوط الإنتاج والتقنيات العصرية، لنمنحك ألواناً ثابتة، وملمساً ناعماً، ودقة متناهية في كل حبة.
+          </p>
+          <div class="hero-actions">
+            <a href="#products" class="btn-primary">
+              <i class="fa-solid fa-gem"></i>
+              <span>استكشف منتجاتنا</span>
+            </a>
+            <a href="https://wa.me/201013983160?text=مرحباً%20مصنع%20الفرسان،%20أود%20الاستفسار%20عن%20منتجات%20الخرز%20وأسعار%20الجملة" target="_blank" rel="noopener" class="btn-whatsapp-hero">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>واتساب مباشر</span>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <i class="fa-solid fa-envelope"></i>
+              <span>طلب تسعيرة</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-visual-card">
+            <img src="ChatGPT Image Jun 13, 2026, 01_18_08 AM.png" alt="مصنع الفرسان للخرز">
+            <div class="hero-card-overlay">
+              <span class="hero-card-tag">صناعة مصرية ١٠٠٪</span>
+              <div class="hero-card-title">خطوط إنتاج خرز فائقة الدقة</div>
+              <div class="hero-card-desc">أعلى معايير المتانة وتنوع فريد في الأشكال والأحجام</div>
+            </div>
+          </div>
+          <div class="hero-floating-badge">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <strong>خبرة متوارثة</strong>
+              <span>أكثر من 20 عاماً من الثقة</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- STATS BAR -->
-  <div class="stats-bar">
-    <div class="stat-item">
-      <div class="stat-num">+<span>20</span></div>
-      <div class="stat-label">سنة خبرة في الصناعة</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">+<span>500</span></div>
-      <div class="stat-label">عميل راضٍ</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">+<span>50</span></div>
-      <div class="stat-label">نوع من المنتجات</div>
-    </div>
-  </div>
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-card-wrapper">
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+          <div class="stat-num">
+            <span>20</span>
+            <span class="plus">+</span>
+          </div>
+          <div class="stat-label">سنة خبرة عريقة في الصناعة</div>
+        </div>
 
-  <!-- FEATURES -->
-  <section class="section">
-    <div class="section-header">
-      <div class="eyebrow">ما يميزنا</div>
-      <div class="section-title">لماذا تختار <span>الفرسان؟</span></div>
-    </div>
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div class="stat-num">
+            <span>500</span>
+            <span class="plus">+</span>
+          </div>
+          <div class="stat-label">عميل وتاجر جملة راضٍ</div>
         </div>
-        <h3>فريق متخصص</h3>
-        <p>فريق عمل ذو خبرة وكفاءة عالية يضمن لك أعلى مستوى من الدقة في التصنيع.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-        </div>
-        <h3>تقنيات حديثة</h3>
-        <p>نستخدم أحدث خطوط الإنتاج لتلبية احتياجات السوق بكفاءة وسرعة فائقة.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-        </div>
-        <h3>جودة عالية</h3>
-        <p>نلتزم بتقديم منتجات بأعلى معايير الجودة العالمية في كل قطعة نصنعها.</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- PRODUCTS -->
-  <section class="products-section">
-    <div class="products-header">
-      <div>
-        <div class="eyebrow gold">تشكيلتنا</div>
-        <div class="section-title white">منتجاتنا المميزة</div>
-      </div>
-      <div class="see-all">عرض جميع المنتجات ←</div>
-    </div>
-    <div class="products-grid">
-      <div class="product-card">
-        <div class="product-img">
-          <img src="WhatsApp Image 2026-06-13 at 1.37.20 AM.jpeg" alt="خرز فاخر">
-          <div class="product-badge">نوع جديد</div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fa-solid fa-shapes"></i>
+          </div>
+          <div class="stat-num">
+            <span>50</span>
+            <span class="plus">+</span>
+          </div>
+          <div class="stat-label">نوع ومقاس ولون من الخرز</div>
         </div>
-        <div class="product-info">
-          <h4>خرز فاخر</h4>
-          <p>جودة عالية الدقة</p>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="product-img">
-          <img src="WhatsApp Image 2026-06-13 at 1.37.54 AM.jpeg" alt="خرز ملون">
-        </div>
-        <div class="product-info">
-          <h4>خرز ملون</h4>
-          <p>ألوان متنوعة وزاهية</p>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="product-img">
-          <img src="WhatsApp Image 2026-06-13 at 1.36.39 AM.jpeg" alt="تشكيلة خاصة">
-        </div>
-        <div class="product-info">
-          <h4>تشكيلة خاصة</h4>
-          <p>تصاميم حصرية</p>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="product-img">
-          <img src="702486900_122114545581279391_4197637457797478936_n.jpg" alt="خرز كلاسيكي">
-        </div>
-        <div class="product-info">
-          <h4>خرز كلاسيكي</h4>
-          <p>الأصالة والجمال</p>
+
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="stat-num">
+            <span>100</span>
+            <span class="plus">%</span>
+          </div>
+          <div class="stat-label">ضمان الجودة والمتانة للمنتجات</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY US -->
-  <section class="section white-bg">
-    <div class="why-grid">
-      <div class="why-visual">
-        <div class="big-num">١</div>
-        <p>الأفضل في المنطقة الصناعية بالسنبلاوين</p>
+  <!-- FEATURES SECTION -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">
+          <i class="fa-solid fa-star"></i>
+          <span>لماذا يختارنا كبار التجار؟</span>
+        </div>
+        <h2 class="section-title">مميزات تجعل <span>الفرسان</span> وجهتك الأولى</h2>
+        <p class="section-desc">
+          نجمع بين عراقة الخبرة وأحدث ما وصلت إليه تقنيات التشكيل البلاستيكي لتقديم منتج يلبي تطلعات المصنعين وأصحاب الورش والمتاجر.
+        </p>
       </div>
-      <div class="why-items">
-        <div class="why-item">
-          <div class="why-dot">🏭</div>
-          <div>
-            <h4>تصنيع محلي متميز</h4>
-            <p>نفخر بتصنيع منتجاتنا داخل مصر باستخدام أجود الخامات.</p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-gem"></i>
+          </div>
+          <h3>خامات نخب أول</h3>
+          <p>نعتمد على مواد خام نقية 100% تمنح الخرز لمعاناً فائقاً وصلابة عالية لا تنكسر أو تتشوه مع الاستخدام المكثف.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <h3>تقنيات ومكائن حديثة</h3>
+          <p>خطوط إنتاج متطورة وماكينات حقن إلكترونية فائقة الدقة لضمان تناسق الأحجام وخلو الحبات من أي شوائب أو زوائد.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <h3>ألوان زاهية وثابتة</h3>
+          <p>أصباغ خاصة ذات ثبات لوني فائق مقاوم لأشعة الشمس والماء والمنظفات لتبقى المنتجات براقة برونقها الأصلي.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h3>توريد وشحن سريع</h3>
+          <p>أسطول توصيل يغطي جميع محافظات جمهورية مصر العربية مع سرعة استثنائية في تلبية الطلبيات الضخمة.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <h3>أسعار جملة مباشرة</h3>
+          <p>احصل على أفضل تسعيرة مباشرة من المصنع بدون وسطاء وهوامش ربحية مضخمة، مع تخفيضات إضافية للكميات.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h3>فريق متخصص وخدمة مستمرة</h3>
+          <p>كوادر فنية متمرسة تحت إشراف هندسي وإداري متواصل لضمان تلبية كافة المواصفات والطلبات الخاصة لعملائنا.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section class="section products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow gold">
+          <i class="fa-solid fa-sparkles"></i>
+          <span>تشكيلتنا الإنتاجية</span>
+        </div>
+        <h2 class="section-title white">أحدث <span>منتجات الخرز</span> المتوفرة</h2>
+        <p class="section-desc white">
+          استكشف باقة متنوعة من الخرز بمختلف الأشكال والأحجام والألوان، جاهزة للشحن الفوري للورش والمصانع ومتاجر الجملة.
+        </p>
+      </div>
+
+      <div class="products-nav-bar">
+        <div class="products-categories">
+          <button class="category-pill active" data-filter="all">جميع المنتجات</button>
+          <button class="category-pill" data-filter="luxury">خرز فاخر وكريستال</button>
+          <button class="category-pill" data-filter="colors">خرز ملون ومشكّل</button>
+          <button class="category-pill" data-filter="classic">خرز كلاسيكي وخامات</button>
+        </div>
+        <a href="https://wa.me/201013983160?text=أريد%20الاطلاع%20على%20كتالوج%20المنتجات%20الكامل" target="_blank" rel="noopener" class="see-all" style="color: var(--accent-gold); font-weight: 700; display: inline-flex; align-items: center; gap: 8px;">
+          <span>طلب الكتالوج الكامل بالأسعار</span>
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card" data-category="luxury">
+          <div class="product-img-wrap">
+            <img src="WhatsApp Image 2026-06-13 at 1.37.20 AM.jpeg" alt="خرز فاخر عالي النقاء">
+            <span class="product-badge">الأكثر طلباً ⭐</span>
+          </div>
+          <div class="product-info">
+            <h4>خرز كريستالي فاخر</h4>
+            <p>بريق استثنائي ودقة تصنيع متناهية للأشغال اليدوية والتطريز الراقي وصناعة السبح والإكسسوارات.</p>
+            <div class="product-features-tags">
+              <span class="product-tag">مقاسات: 6، 8، 10 ملم</span>
+              <span class="product-tag">شفافية عالية</span>
+            </div>
+            <a href="https://wa.me/201013983160?text=أود%20طلب%20عرض%20سعر%20لـ%20(خرز%20كريستالي%20فاخر)" target="_blank" rel="noopener" class="product-btn-order">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>اطلب تسعيرة عبر واتساب</span>
+            </a>
           </div>
         </div>
-        <div class="why-item">
-          <div class="why-dot">🚚</div>
-          <div>
-            <h4>توصيل لجميع المحافظات</h4>
-            <p>نوصل طلباتك إلى أي مكان في مصر بأمان وسرعة.</p>
+
+        <!-- Product 2 -->
+        <div class="product-card" data-category="colors">
+          <div class="product-img-wrap">
+            <img src="WhatsApp Image 2026-06-13 at 1.37.54 AM.jpeg" alt="خرز ملون زاهي">
+            <span class="product-badge secondary">ألوان متعددة 🎨</span>
+          </div>
+          <div class="product-info">
+            <h4>خرز ملون زاهي</h4>
+            <p>مجموعة لونية مبهجة وثابتة مناسبة لكافة المشغولات الفنية، التطريز، وأعمال الديكور والتصنيع.</p>
+            <div class="product-features-tags">
+              <span class="product-tag">أكثر من 30 لون</span>
+              <span class="product-tag">مقاوم للتلاشي</span>
+            </div>
+            <a href="https://wa.me/201013983160?text=أود%20طلب%20عرض%20سعر%20لـ%20(خرز%20ملون%20زاهي)" target="_blank" rel="noopener" class="product-btn-order">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>اطلب تسعيرة عبر واتساب</span>
+            </a>
           </div>
         </div>
-        <div class="why-item">
-          <div class="why-dot">💎</div>
-          <div>
-            <h4>ضمان الجودة</h4>
-            <p>كل منتج يخضع لفحص جودة دقيق قبل الشحن.</p>
+
+        <!-- Product 3 -->
+        <div class="product-card" data-category="luxury">
+          <div class="product-img-wrap">
+            <img src="WhatsApp Image 2026-06-13 at 1.36.39 AM.jpeg" alt="تشكيلة خرز حصرية">
+            <span class="product-badge">تصميم حصري ✨</span>
+          </div>
+          <div class="product-info">
+            <h4>تشكيلة خرز هندسية خاصة</h4>
+            <p>قصّات هندسية فريدة وملمس حريري صممت خصيصاً للمنتجات التي تبحث عن طابع فخم وغير تقليدي.</p>
+            <div class="product-features-tags">
+              <span class="product-tag">أشكال بيضاوية ودائرية</span>
+              <span class="product-tag">سطح ناعم</span>
+            </div>
+            <a href="https://wa.me/201013983160?text=أود%20طلب%20عرض%20سعر%20لـ%20(تشكيلة%20خرز%20هندسية%20خاصة)" target="_blank" rel="noopener" class="product-btn-order">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>اطلب تسعيرة عبر واتساب</span>
+            </a>
           </div>
         </div>
-        <div class="why-item">
-          <div class="why-dot">🤝</div>
-          <div>
-            <h4>أسعار تنافسية</h4>
-            <p>أفضل الأسعار بدون المساومة على الجودة أبدًا.</p>
+
+        <!-- Product 4 -->
+        <div class="product-card" data-category="classic">
+          <div class="product-img-wrap">
+            <img src="702486900_122114545581279391_4197637457797478936_n.jpg" alt="خرز كلاسيكي أصيل">
+            <span class="product-badge secondary">جملة كبرى 📦</span>
+          </div>
+          <div class="product-info">
+            <h4>خرز كلاسيكي متين</h4>
+            <p>الخيار المثالي للإنتاج التجاري الضخم والسبح الكلاسيكية، يجمع بين قوة التحمل والسعر الاقتصادي المنافس.</p>
+            <div class="product-features-tags">
+              <span class="product-tag">أكياس وكراتين جملة</span>
+              <span class="product-tag">خامة عالية التحمل</span>
+            </div>
+            <a href="https://wa.me/201013983160?text=أود%20طلب%20عرض%20سعر%20لـ%20(خرز%20كلاسيكي%20متين)" target="_blank" rel="noopener" class="product-btn-order">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>اطلب تسعيرة عبر واتساب</span>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT STRIP -->
-  <div class="contact-strip">
-    <h3>هل تريد الاستفسار أو الطلب؟</h3>
-    <p style="margin-bottom: 0;">تواصل معنا الآن وسيردّ عليك فريقنا في أسرع وقت</p>
-    <p style="margin-top: 5px;"> تحت اشراف : <span style="color: var
-#C9A84C
-(--gold) ; font-weight: 900;">أ/محمد يونس</span></p>
-    <div class="contact-buttons">
-      <button class="contact-btn dark">📞 اتصل بنا الآن</button>
-      <button class="contact-btn light">✉️ راسلنا</button>
+  <!-- GALLERY SECTION -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">
+          <i class="fa-solid fa-camera"></i>
+          <span>جولة مصورة</span>
+        </div>
+        <h2 class="section-title">معرض <span>الصور والإنتاج</span></h2>
+        <p class="section-desc">
+          نظرة مباشرة على جودة الحبات ودقة تشطيبها قبل تعبئتها وشحنها للعملاء الكرام في كافة أرجاء مصر.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item wide">
+          <img src="WhatsApp Image 2026-06-13 at 1.36.27 AM.jpeg" alt="صالة الإنتاج والخامات">
+          <div class="gallery-overlay">
+            <h4>خطوط الإنتاج والتصنيع المتطورة</h4>
+            <p>فحص دوري لكل دفعة إنتاجية لضمان خلوها من أي عيوب صناعية</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="WhatsApp Image 2026-06-13 at 1.37.20 AM.jpeg" alt="فرز الخرز وتعبئته">
+          <div class="gallery-overlay">
+            <h4>فرز وتصنيف دقيق</h4>
+            <p>تدرجات لونية منسقة بدقة فائقة</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="WhatsApp Image 2026-06-13 at 1.37.54 AM.jpeg" alt="ألوان خرز مبهجة">
+          <div class="gallery-overlay">
+            <h4>تشكيلة الألوان الزاهية</h4>
+            <p>جاهزية تامة لتلبية أذواق المصممين والورش</p>
+          </div>
+        </div>
+
+        <div class="gallery-item wide">
+          <img src="WhatsApp Image 2026-06-13 at 1.36.39 AM.jpeg" alt="تشكيلات خرز جاهزة للشحن">
+          <div class="gallery-overlay">
+            <h4>تعبئة آمنة وتغليف ممتاز</h4>
+            <p>تجهيز الطلبيات بأعلى درجات العناية لضمان سلامتها أثناء الشحن</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- ABOUT US / FACTORY EXCELLENCE -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual-box">
+          <div class="about-number-badge">١</div>
+          <h3>الأفضل والأكبر في المنطقة الصناعية</h3>
+          <p>
+            تأسس مصنع الفرسان على أيدي عائلة أبو يونس ليكون رمزاً للصناعة الوطنية المتقنة في السنبلاوين والدقهلية، وملتزمين دائماً بتقديم أعلى جودة تنافس المنتجات المستوردة.
+          </p>
+          <div class="about-supervisor-box">
+            <i class="fa-solid fa-user-tie"></i>
+            <div>
+              <span>الإشراف العام والإدارة:</span>
+              <strong>أ / محمد يونس</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-points-list">
+          <div class="about-point-card">
+            <div class="about-point-icon">
+              <i class="fa-solid fa-industry"></i>
+            </div>
+            <div>
+              <h4>تصنيع محلي بمواصفات عالمية</h4>
+              <p>نفخر بأن جميع منتجاتنا مصنعة بأيادٍ مصرية ماهرة داخل مصنعنا وفق اشتراطات دقيقة في الكثافة والصلابة.</p>
+            </div>
+          </div>
+
+          <div class="about-point-card">
+            <div class="about-point-icon">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div>
+              <h4>شحن آمن لكافة المحافظات</h4>
+              <p>نوفر خيارات شحن متعددة وسريعة للمحافظات والمدن من الإسكندرية إلى أسوان مع تتبع دقيق للشحنات.</p>
+            </div>
+          </div>
+
+          <div class="about-point-card">
+            <div class="about-point-icon">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div>
+              <h4>ضمان الجودة واستبدال فوري</h4>
+              <p>نضمن جودة بضائعنا وخلوها من العيوب، ونتيح للعميل فحص العينات والتأكد من مطابقتها للمواصفات المتفق عليها.</p>
+            </div>
+          </div>
+
+          <div class="about-point-card">
+            <div class="about-point-icon">
+              <i class="fa-solid fa-tags"></i>
+            </div>
+            <div>
+              <h4>أسعار عادلة ومنافسة بالجملة</h4>
+              <p>نوفر للورش والتجار أفضل الأسعار التنافسية التي تضمن لهم تحقيق أعلى هوامش ربحية في أسواقهم.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & ORDER SECTION -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <h2>هل تريد الاستفسار أو <span>طلب كميات جملة؟</span></h2>
+        <p>فريقنا ومندوبو المبيعات بانتظار تواصلك لتزويدك بأحدث الأسعار والعينات المتوفرة والتوريد الفوري.</p>
+        
+        <div class="supervisor-highlight">
+          <i class="fa-solid fa-star"></i>
+          <div>تحت إشراف: <span>أ / محمد يونس</span> — عائلة أبو يونس</div>
+        </div>
+
+        <div class="contact-cards-grid">
+          <!-- Card 1: Phone -->
+          <div class="contact-channel-card">
+            <div class="contact-channel-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <h4>اتصال هاتفي مباشر</h4>
+            <p>تحدث مع إدارة المصنع مباشرة</p>
+            <a href="tel:01013983160" class="contact-channel-btn gold">
+              <i class="fa-solid fa-phone"></i>
+              <span dir="ltr">01013983160</span>
+            </a>
+          </div>
+
+          <!-- Card 2: WhatsApp -->
+          <div class="contact-channel-card">
+            <div class="contact-channel-icon whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <h4>محادثة واتساب</h4>
+            <p>رد سريع وإرسال صور الخامات</p>
+            <a href="https://wa.me/201013983160?text=مرحباً%20مصنع%20الفرسان،%20أود%20الاستفسار%20عن%20الأسعار%20والكميات" target="_blank" rel="noopener" class="contact-channel-btn green">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>محادثة فورية</span>
+            </a>
+          </div>
+
+          <!-- Card 3: Location -->
+          <div class="contact-channel-card">
+            <div class="contact-channel-icon">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <h4>زيارة المصنع</h4>
+            <p>السنبلاوين · ديو الوسطى</p>
+            <a href="tel:0123456789" class="contact-channel-btn outline">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span dir="ltr">0123456789</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    جميع الحقوق محفوظة © 2026 — <span>مصنع الفرسان للخرز</span> ·  عائلة أبو يونس · المبرمج : <span>م/ادهم محمد ابراهيم محمد</span> 
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand" style="margin-bottom: 1.25rem;">
+            <div class="brand-icon-wrapper" style="width: 42px; height: 42px;">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 22px; height: 22px;">
+                <ellipse cx="12" cy="8" rx="4" ry="5"/>
+                <ellipse cx="5" cy="18" rx="3" ry="4"/>
+                <ellipse cx="19" cy="18" rx="3" ry="4"/>
+                <ellipse cx="12" cy="20" rx="3" ry="3"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <h2 style="font-size: 17px;">مصنع <span>الفرسان</span> للخرز</h2>
+              <p>عائلة أبو يونس</p>
+            </div>
+          </div>
+          <p>
+            صرح صناعي متخصص في إنتاج وتوريد أرقى أنواع خامات الخرز بمختلف المقاسات والألوان، بجودة مصرية تواكب المعايير العالمية وتلبي احتياجات السوق التجاري والحرفي.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="#hero"><i class="fa-solid fa-angle-left"></i> الرئيسية</a></li>
+            <li><a href="#about"><i class="fa-solid fa-angle-left"></i> عن المصنع</a></li>
+            <li><a href="#features"><i class="fa-solid fa-angle-left"></i> ما يميزنا</a></li>
+            <li><a href="#products"><i class="fa-solid fa-angle-left"></i> تشكيلة المنتجات</a></li>
+            <li><a href="#gallery"><i class="fa-solid fa-angle-left"></i> معرض الصور</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>خدماتنا للعملاء</h4>
+          <ul>
+            <li><a href="#products"><i class="fa-solid fa-angle-left"></i> توريد كميات الجملة</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-angle-left"></i> طلبيات وتصنيع خاص</a></li>
+            <li><a href="#about"><i class="fa-solid fa-angle-left"></i> شحن لجميع المحافظات</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-angle-left"></i> عينات ومعاينة الخامات</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>بيانات المصنع</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>المنطقة الصناعية، قرية ديو الوسطى، مركز السنبلاوين، محافظة الدقهلية</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span dir="ltr">01013983160 — 0123456789</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-user-check"></i>
+            <span>إشراف: أ / محمد يونس</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div>
+          جميع الحقوق محفوظة © 2026 — <span>مصنع الفرسان للخرز</span> (عائلة أبو يونس).
+        </div>
+        <div class="developer-badge">
+          تطوير وبرمجة : <span>م / أدهم محمد إبراهيم محمد</span>
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <script>
-    function toggleMenu() {
-      document.getElementById("nav").classList.toggle("active");
-    }
-  </script>
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/201013983160?text=مرحباً%20مصنع%20الفرسان،%20أود%20الاستفسار%20عن%20الخرز" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
+  <!-- SCROLL TO TOP BUTTON -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="الصعود للأعلى">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Mobile navigation toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      const icon = menuToggle.querySelector('i');
+      if (navLinks.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+      } else {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      }
+    });
+
+    // Close menu when clicking any nav item
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        const icon = menuToggle.querySelector('i');
+        if (icon) {
+          icon.classList.remove('fa-xmark');
+          icon.classList.add('fa-bars');
+        }
+      });
+    });
+
+    // Active Navigation on Scroll
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.pageYOffset;
+      sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 120;
+        const sectionId = current.getAttribute('id');
+        const navAnchor = document.querySelector(`.nav-links a[href*='${sectionId}']`);
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          if (navAnchor) navAnchor.classList.add('active');
+        } else {
+          if (navAnchor) navAnchor.classList.remove('active');
+        }
+      });
+
+      // Scroll To Top button visibility
+      const scrollTopBtn = document.getElementById('scrollTopBtn');
+      if (window.scrollY > 400) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+
+    // Scroll to Top action
+    document.getElementById('scrollTopBtn').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Product Filter Tabs
+    const filterButtons = document.querySelectorAll('.category-pill');
+    const productCards = document.querySelectorAll('.product-card');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        const filter = button.getAttribute('data-filter');
+
+        productCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
